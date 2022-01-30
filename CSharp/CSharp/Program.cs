@@ -13,6 +13,7 @@ namespace CSharp
             Console.WriteLine("Enter your choice between 1 to 10: ");
             Console.WriteLine("1 For: Flip a Coin Head and Tail. ");
             Console.WriteLine("2 For: Check Leap Year Or not");
+            Console.WriteLine("3 For: Select Power of 2 Number");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -27,6 +28,11 @@ namespace CSharp
                     //LEAP YEAR
                     Leapyear LeapYearOrNot = new Leapyear();
                     LeapYearOrNot.Checkleapyear();
+                    break;
+                case 3:
+                    //POWEROF2
+                    Powerof2 Power = new Powerof2();
+                    Power.Power();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
