@@ -17,6 +17,7 @@ namespace CSharp
             Console.WriteLine("4 For: Select the Harmonic Number");
             Console.WriteLine("5 For: Select Factor of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
+            Console.WriteLine("7 For: Select Swap the Numbers");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -51,6 +52,11 @@ namespace CSharp
                     //QuotientRemainder
                     QuotientRemainder QRem = new QuotientRemainder();
                     QRem.QuotientRem();
+                    break;
+                case 7:
+                    //Swap 2 number
+                    Swapnumbers Swap = new Swapnumbers();
+                    Swap.Swapnumber();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
