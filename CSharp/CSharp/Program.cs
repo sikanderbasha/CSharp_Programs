@@ -15,6 +15,7 @@ namespace CSharp
             Console.WriteLine("2 For: Check Leap Year Or not");
             Console.WriteLine("3 For: Select Power of 2 Number");
             Console.WriteLine("4 For: Select the Harmonic Number");
+            Console.WriteLine("5 For: Select Factor of number");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -39,6 +40,11 @@ namespace CSharp
                     //Harmonic Series
                     Harmonic HarmonicNumber = new Harmonic();
                     HarmonicNumber.HarmonicSeries();
+                    break;
+                case 5:
+                    //Prime Factor
+                    Primefactor Prime = new Primefactor();
+                    Prime.Factorial();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
