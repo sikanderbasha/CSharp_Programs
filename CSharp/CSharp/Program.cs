@@ -18,6 +18,7 @@ namespace CSharp
             Console.WriteLine("5 For: Select Factor of number");
             Console.WriteLine("6 For: Select Quotient and Remainder");
             Console.WriteLine("7 For: Select Swap the Numbers");
+            Console.WriteLine("8 For: Select Even and Odd number");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -57,6 +58,11 @@ namespace CSharp
                     //Swap 2 number
                     Swapnumbers Swap = new Swapnumbers();
                     Swap.Swapnumber();
+                    break;
+                case 8:
+                    // Even Or odd
+                    Evenodd EvenOdd = new Evenodd();
+                    EvenOdd.CheckEvenodd();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
