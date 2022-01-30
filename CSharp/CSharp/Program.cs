@@ -20,6 +20,7 @@ namespace CSharp
             Console.WriteLine("7 For: Select Swap the Numbers");
             Console.WriteLine("8 For: Select Even and Odd number");
             Console.WriteLine("9 For: Select Alphabet Vowel or Consonant");
+            Console.WriteLine("10 For: Select Greatest number among Three");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -69,6 +70,11 @@ namespace CSharp
                     // Vowel or Not
                     VowelConsonant Vowel = new VowelConsonant();
                     Vowel.Vowelcon();
+                    break;
+                case 10:
+                    //Greatest
+                    Greatestnumber checkgreater = new Greatestnumber();
+                    checkgreater.Greatestnum();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
