@@ -16,6 +16,7 @@ namespace CSharp
             Console.WriteLine("3 For: Select Power of 2 Number");
             Console.WriteLine("4 For: Select the Harmonic Number");
             Console.WriteLine("5 For: Select Factor of number");
+            Console.WriteLine("6 For: Select Quotient and Remainder");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -45,6 +46,11 @@ namespace CSharp
                     //Prime Factor
                     Primefactor Prime = new Primefactor();
                     Prime.Factorial();
+                    break;
+                case 6:
+                    //QuotientRemainder
+                    QuotientRemainder QRem = new QuotientRemainder();
+                    QRem.QuotientRem();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
