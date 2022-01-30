@@ -14,6 +14,7 @@ namespace CSharp
             Console.WriteLine("1 For: Flip a Coin Head and Tail. ");
             Console.WriteLine("2 For: Check Leap Year Or not");
             Console.WriteLine("3 For: Select Power of 2 Number");
+            Console.WriteLine("4 For: Select the Harmonic Number");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -33,6 +34,11 @@ namespace CSharp
                     //POWEROF2
                     Powerof2 Power = new Powerof2();
                     Power.Power();
+                    break;
+                case 4:
+                    //Harmonic Series
+                    Harmonic HarmonicNumber = new Harmonic();
+                    HarmonicNumber.HarmonicSeries();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
