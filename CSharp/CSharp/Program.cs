@@ -19,6 +19,7 @@ namespace CSharp
             Console.WriteLine("6 For: Select Quotient and Remainder");
             Console.WriteLine("7 For: Select Swap the Numbers");
             Console.WriteLine("8 For: Select Even and Odd number");
+            Console.WriteLine("9 For: Select Alphabet Vowel or Consonant");
             int selection = Convert.ToInt32(Console.ReadLine());
             // user selection
 
@@ -63,6 +64,11 @@ namespace CSharp
                     // Even Or odd
                     Evenodd EvenOdd = new Evenodd();
                     EvenOdd.CheckEvenodd();
+                    break;
+                case 9:
+                    // Vowel or Not
+                    VowelConsonant Vowel = new VowelConsonant();
+                    Vowel.Vowelcon();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
